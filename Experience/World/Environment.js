@@ -19,6 +19,8 @@ export default class Room{
         this.sunLight.shadow.mapSize.set(1024, 1024);
         this.sunLight.position.set(-1.5, 7, 3);
         this.scene.add(this.sunLight);
+        this.ambientLight = new THREE.AmbientLight("#ffffff", 0.75);
+        this.scene.add(this.ambientLight);
     }
     resize() {
         
