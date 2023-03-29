@@ -17,7 +17,8 @@ export default class Room{
         
         this.sunLight.castShadow = true;
         this.sunLight.shadow.camera.left=-7;
-        this.sunLight.shadow.camera.right=7;
+        this.sunLight.shadow.camera.top=6;
+        this.sunLight.shadow.camera.right=10;
         this.sunLight.shadow.camera.far = 20;
         this.theme = this.experience.theme; 
         this.sunLight.shadow.mapSize.set(1024*4, 1024*4);

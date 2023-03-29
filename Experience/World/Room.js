@@ -27,57 +27,18 @@ export default class Room{
 
             if (child instanceof THREE.Group) {
                 child.children.forEach((groupchild) => {
-                    //console.log(groupchild.material);
+                    //console.log(groupchild);
                     groupchild.castShadow = true;
                     groupchild.receiveShadow = true;
                     groupchild.children.forEach((groupchild2) => {
-                        //console.log(groupchild.material);
+                        //console.log(groupchild2.name);
                         groupchild2.castShadow = true;
                         groupchild2.receiveShadow = true;
-                        /*
-                        groupchild2.children.forEach((groupchild3) => {
-                            //console.log(groupchild.material); 
-                            groupchild3.castShadow = true;
-                            groupchild3.receiveShadow = true;
-                            groupchild3.children.forEach((groupchild4) => {
-                                //console.log(groupchild.material);
-                                groupchild4.castShadow = true;
-                                groupchild4.receiveShadow = true;
-                                groupchild4.children.forEach((groupchild5) => {
-                                    //console.log(groupchild.material);
-                                    groupchild5.castShadow = true;
-                                    groupchild5.receiveShadow = true;
-                                    groupchild5.children.forEach((groupchild6) => {
-                                        //console.log(groupchild.material);
-                                        groupchild6.castShadow = true;
-                                        groupchild6.receiveShadow = true;
-                                        groupchild6.children.forEach((groupchild7) => {
-                                            //console.log(groupchild.material);
-                                            groupchild7.castShadow = true;
-                                            groupchild7.receiveShadow = true;
-                                            groupchild7.children.forEach((groupchild8) => {
-                                                //console.log(groupchild.material);
-                                                groupchild8.castShadow = true;
-                                                groupchild8.receiveShadow = true;
-                        
-                                                
-                                            });
-                                            
-                                        });
-                                        
-                                    });
-                                    
-                                });
-                                
-                            });
-                            
-                        });
-                        */
 
                     });
                 });
             }
-            console.log(child.name);
+            //console.log(child.name);
             if (child.name === "car_1_2_Mat3_0") {
                 //console.log("find it");
                 //child.material = new THREE.MeshPhysicalMaterial();
@@ -92,14 +53,14 @@ export default class Room{
             if (child.name === "car_1_4_Mat6_0002")
             {
                 child.material.emission = new THREE.Color("#ffffff");
-                child.material.emissiveIntensity = 8;
+                child.material.emissiveIntensity = 30;
                 //child.scale = new THREE.Vector3(1,1,1);
 
             }
             if (child.name === "Sketchfab_model")
             {
-                //console.log("find it");
-                //console.log(child.position);
+                console.log("find it");
+                //console.log(child.children[0].children[0]);
                 //child.scale = new THREE.Vector3(1,1,1);
 
             }
