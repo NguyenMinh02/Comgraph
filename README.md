@@ -6,7 +6,9 @@
   <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"></a>
   <a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/vite.svg" alt="node compatibility"></a>
 </p>
-![Home page screenshot](https://github.com/NguyenMinh02/Comgraph/blob/master/public/textures/U2ntitled.png)
+
+![Home page screenshot](https://github.com/NguyenMinh02/Comgraph/blob/master/public/textures/U2ntitled.png?raw=true "Home page screenshot")
+
 This repo contains code of a rendering of a racing track with running race car animation and Day/Night Switch. We got our inspiration from **[this website](https://bokoko33.me/)**.
 ## Members
 | Student ID | Name |
